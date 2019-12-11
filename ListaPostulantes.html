@@ -451,29 +451,26 @@
     <div id="content" class="content">
       <div class="row">
       <div class="panel panel-success overflow-hidden col-md-6" style="margin: auto;float: none;">
-            <div class="panel-heading">
+            <div class="panel-heading" style="background: #2184DA;">
                 <h3 class="panel-title">
                     <a class="accordion-toggle accordion-toggle-styled" data-toggle="collapse" data-parent="#theme-accordion" href="#theme-collapse-one" aria-expanded="true">
                         <i class="fa fa-plus-circle pull-right"></i> 
-                        Registro de Procesos de Seleccion
+                        Lista de postulantes
                     </a>
                 </h3>
             </div>
             <div id="theme-collapse-one" class="panel-collapse collapse in" aria-expanded="true" style="">
                 <div class="panel-body">
                   <div class="row">
-                      <div class=" form-group col-md-6">
-                          <label class="col-md-6 control-label">Nombre de proceso:</label>
+                      <div class=" form-group col-md-12">
+                          <label class="col-md-6 control-label">Nombres o apellidos :</label>
                           <input type="text" id="dni" name="dni" class="form-control" data-parsley-required="true" placeholder="Ingresar Nombres" required="" data-parsley-id="8017"><ul class="parsley-errors-list" id="parsley-id-8017"></ul>
                         </div>
-                        <div class="form-group col-md-6">
-                            <label class="col-md-6 control-label">Descripciòn de proceso:</label>
-                            <input type="text" id="dni" name="dni" class="form-control" data-parsley-required="true" placeholder="Ingresar Descripcion" required="" data-parsley-id="8017"><ul class="parsley-errors-list" id="parsley-id-8017"></ul>
-                          </div>
+                        
                   </div>
                   <div class="row">
                     <div class="text-center col-md-6" style="margin: auto;float:none;" > 
-                    <a   style="width: 100%;" href="#" class="btn btn-primary">Buscar</a>
+                    <a   style="width: 100%; background: #1abc9c;" href="#" class="btn btn-primary">Buscar</a>
                   </div> 
                   </div>
               
@@ -489,48 +486,47 @@
   
       <div class="panel with-pagination clearfix m-b-0">
           <div class="panel-heading">
-              <div class="panel-heading-btn">
-				<a href="#modal-dialog" class="btn btn-block btn-primary" data-toggle="modal">Nueva oferta laboral </a>
-              </div>
-              <h4 class="panel-title">Listado de Puestos </h4>
+
+              <h4 class="panel-title">Listado de Postulantes </h4>
           </div>
           <table id="data-table" data-order='[[1,"asc"]]' class="table table-bordered table-hover">
               <thead>
-                  <tr class="success">
-                      <th>Nº</th>
-                      <th>Puesto</th>
-                      <th>Descripcion </th>
-                      <th>Vacantes</th>
-                      <th>Postulantes</th>
-                      <th data-sorting="disabled"></th>
+                  <tr >
+                      <th style="background: #2184DA;color: white;">Nº</th>
+                      <th style="background: #2184DA;color: white;">Nombres y Apellidos</th>
+                      <th style="background: #ffffff;color: black;">Ver perfil  </th>
+                      <th style="background: #2184DA;color: white;">Estado </th>
+                      <th style="background: #2184DA;color: white;">Historial </th>
+                     
                   </tr>
               </thead>
               <tbody>
                   <tr class="gradeA">
                       
                       <td>1</td>
-                      <td>Internet Explorer 4.0</td>
-                      <td>Win 95+</td>
-                      <td>4</td>
-                      <td>X</td>
-                      <td><a href="#" class="btn btn-default btn-xs"><i class="fa fa-cog fa-fw"></i> Ver postulantes</a></td>
+                      <td>Ramon</td>
+					  <td><a href="#modal-dialog"  data-toggle="modal">
+							<i style="color:#2184DA" class=" fa fa-fw m-r-10 pull-left f-s-18 fa-tripadvisor"></i></a></td>
+                      <td></td>
+                      <td><a href="#" style="background: #38AFD3!important;color: white;" class="btn btn-default btn-xs"><i class="fa fa-cog fa-fw"></i> Ver</a></td>
                   </tr>
                   <tr class="even gradeC">
                      
                       <td>2</td>
-                      <td>Internet Explorer 5.0</td>
-                      <td>Win 95+</td>
-                      <td>5</td>
-                      <td>C</td>
-                      <td><a href="#" class="btn btn-default btn-xs"><i class="fa fa-cog fa-fw"></i> Ver postulantes</a></td>
+                      <td>Julio</td>
+                      <td><a href="#modal-dialog"  data-toggle="modal">
+						  <i style="color:#2184DA" class=" fa fa-fw m-r-10 pull-left f-s-18 fa-tripadvisor"></i></a></td>
+                      <td></td>
+					  <td><a href="#" style="background: #38AFD3!important;color: white;" class="btn btn-default btn-xs">
+						<i class="fa fa-cog fa-fw"></i> Ver</a></td>
                   </tr>
                   <tr class="odd gradeA">
                       <td>3</td>
-                      <td>Internet Explorer 5.5</td>
-                      <td>Win 95+</td>
-                      <td>5.5</td>
-                      <td>A</td>
-                      <td><a href="#" class="btn btn-default btn-xs"><i class="fa fa-cog fa-fw"></i> Ver postulantes</a></td>
+                      <td>Alberto</td>
+					  <td><a href="#modal-dialog"  data-toggle="modal">
+							<i style="color:#2184DA" class=" fa fa-fw m-r-10 pull-left f-s-18 fa-tripadvisor"></i></a></td>
+                      <td></td>
+                      <td><a href="#" style="background: #38AFD3!important;color: white;" class="btn btn-default btn-xs"><i class="fa fa-cog fa-fw"></i> Ver</a></td>
                   </tr>
                  
                 
@@ -593,7 +589,8 @@
 							</a>
 							<ul class="sub-menu">
 								<li><a href="ListaPostulantes.html">Lista de Postulantes</a></li>
-								<li><a href="ReporteCociente.html">Reporte de Cociente de Seleccion</a></li>
+                                <li><a href="ReporteCociente.html">Reporte de Cociente de Seleccion</a></li>
+                                <li><a href="NivelEficacia.html">Nivel de Eficacia</a></li>
 							</ul>
 						</li>
 						<li class="divider has-minify-btn">
@@ -713,26 +710,49 @@
 
 	<div class="modal fade" id="modal-dialog" style="display: none;">
 		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header" style="background: #17B6A4;color: white;">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color: white;opacity: 21;">×</button>
-					<h4 class="modal-title" style="color: white;">Registro de ofertas Laborales</h4>
+			<div class="modal-content" style="background: transparent;">
+				<div class="modal-body" style="background: transparent;">
+						<div class="widget widget-blog">
+								
+								<div class="widget-blog-author">
+									<div class="widget-blog-author-image" style="width: 79px;height: 79px;">
+										<img src="assets/img/user_3.jpg" alt="">
+									</div>
+									<div class="widget-blog-author-info">
+										<h5 class="m-t-0 m-b-1">Falcon campos</h5>
+										<p class="text-muted m-0 f-s-11">Diseñador Web</p>
+									</div>
+								</div>
+							</br>
+							<div class="row" style="border-top:black;">
+									<div class="col-md-6" >
+								<p>nombre:Cristoher Anthony </p>
+								<p>Apellidos:Falcon Campos</p>
+								<p>Dni:71541895</p></div><div class="col-md-6" >
+								<p>Correo:Cristopher_campos6@hotmail.com</p>
+								<p>Telefono:993430563</p>
+								<p>Descripcion de postulante:--------------------</p></div></div>
+								<div class="row" style="border-top: inset;">
+								<div class="col-md-6" >
+									<iframe style="height: 350px; width: 100%;" src="pdf.pdf"></iframe></div>
+							
+							<div class="col-md-6">
+								<H4>Resultados de Postulante</H4>	
+								<p>Examen 1:</p>
+								<p>Examen 2:</p>
+								<p>Examen 3</p>
+								<p>Dibujo : 
+									<a href="#" style="background: #38AFD3!important;color: white;"
+									 class="btn btn-default btn-xs"><i class="fa fa-cog fa-fw"></i> Ver</a></p>
+							    <p>Observaciones del administrador:<textarea></textarea></p>
+								<p></p>
+							</div></div>
+								<a href="javascript:;" class="btn width-100 btn-default" data-dismiss="modal" style="color:ivory;
+							background: #F04B46;">Close</a>	
+							</div>
+							
 				</div>
-				<div class="modal-body">
-					<h4>Nombre de puesto </h4>
-					<input style="width: 100%;" type="text"></input>
-		
-					<h4>Numero de vacantes </h4>
-					<input style="width: 100%;" type="text" name="" id="">
-		
-					<h4>descripcion</h4>
-					<textarea style="width: 100%;" name="" id="" cols="30" rows="10"></textarea>
-				</div>
-				<div class="modal-footer">
-					<a href="javascript:;" class="btn width-100 btn-default" data-dismiss="modal" style="color:ivory;
-					background: #F04B46;">Close</a>
-					<a href="javascript:;" class="btn width-100 btn-primary">Action</a>
-				</div>
+				
 			</div>
 		</div>
 	</div>
